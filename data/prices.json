@@ -1,0 +1,570 @@
+[
+  {
+    "itemId": "rice",
+    "nome": "Arroz",
+    "categoria": "Grãos",
+    "precoPorUnidade": 8.5,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "beans",
+    "nome": "Feijão",
+    "categoria": "Grãos",
+    "precoPorUnidade": 9.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "egg",
+    "nome": "Ovo",
+    "categoria": "Proteínas",
+    "precoPorUnidade": 1.1,
+    "unidadePadrao": "un",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "chicken",
+    "nome": "Frango",
+    "categoria": "Proteínas",
+    "precoPorUnidade": 18.9,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "ground_beef",
+    "nome": "Carne moída",
+    "categoria": "Proteínas",
+    "precoPorUnidade": 29.9,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "pasta",
+    "nome": "Macarrão",
+    "categoria": "Grãos",
+    "precoPorUnidade": 7.5,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "bread",
+    "nome": "Pão",
+    "categoria": "Outros",
+    "precoPorUnidade": 0.9,
+    "unidadePadrao": "un",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "milk",
+    "nome": "Leite",
+    "categoria": "Laticínios",
+    "precoPorUnidade": 5.8,
+    "unidadePadrao": "L",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "cheese",
+    "nome": "Queijo",
+    "categoria": "Laticínios",
+    "precoPorUnidade": 34.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "butter",
+    "nome": "Manteiga",
+    "categoria": "Laticínios",
+    "precoPorUnidade": 28.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "tomato",
+    "nome": "Tomate",
+    "categoria": "Legumes",
+    "precoPorUnidade": 9.8,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "onion",
+    "nome": "Cebola",
+    "categoria": "Legumes",
+    "precoPorUnidade": 6.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "garlic",
+    "nome": "Alho",
+    "categoria": "Temperos",
+    "precoPorUnidade": 18.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "lettuce",
+    "nome": "Alface",
+    "categoria": "Legumes",
+    "precoPorUnidade": 4.5,
+    "unidadePadrao": "un",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "carrot",
+    "nome": "Cenoura",
+    "categoria": "Legumes",
+    "precoPorUnidade": 6.4,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "potato",
+    "nome": "Batata",
+    "categoria": "Legumes",
+    "precoPorUnidade": 7.2,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "banana",
+    "nome": "Banana",
+    "categoria": "Legumes",
+    "precoPorUnidade": 5.5,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "oats",
+    "nome": "Aveia",
+    "categoria": "Grãos",
+    "precoPorUnidade": 12.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "coffee",
+    "nome": "Café",
+    "categoria": "Outros",
+    "precoPorUnidade": 32.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "oil",
+    "nome": "Óleo",
+    "categoria": "Outros",
+    "precoPorUnidade": 7.9,
+    "unidadePadrao": "L",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "salt",
+    "nome": "Sal",
+    "categoria": "Temperos",
+    "precoPorUnidade": 4.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "pepper",
+    "nome": "Pimenta-do-reino",
+    "categoria": "Temperos",
+    "precoPorUnidade": 60.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "yogurt",
+    "nome": "Iogurte",
+    "categoria": "Laticínios",
+    "precoPorUnidade": 17.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "tuna",
+    "nome": "Atum",
+    "categoria": "Proteínas",
+    "precoPorUnidade": 39.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "corn",
+    "nome": "Milho",
+    "categoria": "Legumes",
+    "precoPorUnidade": 9.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "peas",
+    "nome": "Ervilha",
+    "categoria": "Legumes",
+    "precoPorUnidade": 11.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "cassava_flour",
+    "nome": "Farinha de mandioca",
+    "categoria": "Grãos",
+    "precoPorUnidade": 8.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "spinach",
+    "nome": "Espinafre",
+    "categoria": "Legumes",
+    "precoPorUnidade": 12.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "pumpkin",
+    "nome": "Abóbora",
+    "categoria": "Legumes",
+    "precoPorUnidade": 6.2,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "orange",
+    "nome": "Laranja",
+    "categoria": "Legumes",
+    "precoPorUnidade": 4.8,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "tapioca_gum",
+    "nome": "Goma de tapioca",
+    "categoria": "Grãos",
+    "precoPorUnidade": 12.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "sardine",
+    "nome": "Sardinha",
+    "categoria": "Proteínas",
+    "precoPorUnidade": 18.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "cabbage",
+    "nome": "Repolho",
+    "categoria": "Legumes",
+    "precoPorUnidade": 6.5,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "zucchini",
+    "nome": "Abobrinha",
+    "categoria": "Legumes",
+    "precoPorUnidade": 8.9,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "sweet_potato",
+    "nome": "Batata-doce",
+    "categoria": "Legumes",
+    "precoPorUnidade": 7.8,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "cream",
+    "nome": "Creme de leite",
+    "categoria": "Laticínios",
+    "precoPorUnidade": 16.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.2
+  },
+  {
+    "itemId": "ham",
+    "nome": "Presunto",
+    "categoria": "Proteínas",
+    "precoPorUnidade": 28,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.2
+  },
+  {
+    "itemId": "jam",
+    "nome": "Geleia",
+    "categoria": "Outros",
+    "precoPorUnidade": 24,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.25
+  },
+  {
+    "itemId": "honey",
+    "nome": "Mel",
+    "categoria": "Outros",
+    "precoPorUnidade": 38,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.3
+  },
+  {
+    "itemId": "papaya",
+    "nome": "Mamão",
+    "categoria": "Outros",
+    "precoPorUnidade": 7.5,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "strawberry",
+    "nome": "Morango",
+    "categoria": "Outros",
+    "precoPorUnidade": 24,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.25
+  },
+  {
+    "itemId": "granola",
+    "nome": "Granola",
+    "categoria": "Grãos",
+    "precoPorUnidade": 22,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.25
+  },
+  {
+    "itemId": "peanut_butter",
+    "nome": "Pasta de amendoim",
+    "categoria": "Outros",
+    "precoPorUnidade": 34,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.5
+  },
+  {
+    "itemId": "cream_cheese",
+    "nome": "Requeijão cremoso",
+    "categoria": "Laticínios",
+    "precoPorUnidade": 26,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.2
+  },
+  {
+    "itemId": "apple",
+    "nome": "Maçã",
+    "categoria": "Outros",
+    "precoPorUnidade": 9.8,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "coconut",
+    "nome": "Coco ralado",
+    "categoria": "Outros",
+    "precoPorUnidade": 30,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.1
+  },
+  {
+    "itemId": "cornmeal",
+    "nome": "Fubá / creme de milho",
+    "categoria": "Grãos",
+    "precoPorUnidade": 8.5,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.5
+  },
+  {
+    "itemId": "flour",
+    "nome": "Farinha de trigo",
+    "categoria": "Grãos",
+    "precoPorUnidade": 6.8,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "cocoa",
+    "nome": "Chocolate em pó",
+    "categoria": "Outros",
+    "precoPorUnidade": 29,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.2
+  },
+  {
+    "itemId": "acerola",
+    "nome": "Acerola",
+    "categoria": "Outros",
+    "precoPorUnidade": 12,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "beef",
+    "nome": "Carne bovina",
+    "categoria": "Proteínas",
+    "precoPorUnidade": 36.9,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "okra",
+    "nome": "Quiabo",
+    "categoria": "Legumes",
+    "precoPorUnidade": 12.9,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "salmon",
+    "nome": "Salmão",
+    "categoria": "Proteínas",
+    "precoPorUnidade": 79.9,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "tilapia",
+    "nome": "Tilápia",
+    "categoria": "Proteínas",
+    "precoPorUnidade": 42.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "shrimp",
+    "nome": "Camarão",
+    "categoria": "Proteínas",
+    "precoPorUnidade": 74.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 1
+  },
+  {
+    "itemId": "mushroom_fresh",
+    "nome": "Cogumelos frescos",
+    "categoria": "Legumes",
+    "precoPorUnidade": 38.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.2
+  },
+  {
+    "itemId": "parmesan",
+    "nome": "Parmesão",
+    "categoria": "Laticínios",
+    "precoPorUnidade": 68.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.18
+  },
+  {
+    "itemId": "tomato_dried",
+    "nome": "Tomate seco",
+    "categoria": "Outros",
+    "precoPorUnidade": 54.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.15
+  },
+  {
+    "itemId": "olive_oil",
+    "nome": "Azeite",
+    "categoria": "Outros",
+    "precoPorUnidade": 38.0,
+    "unidadePadrao": "L",
+    "tamanhoUnidade": 0.5
+  },
+  {
+    "itemId": "nuts",
+    "nome": "Castanhas",
+    "categoria": "Outros",
+    "precoPorUnidade": 76.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.2
+  },
+  {
+    "itemId": "arborio_rice",
+    "nome": "Arroz arbório",
+    "categoria": "Grãos",
+    "precoPorUnidade": 28.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.5
+  },
+  {
+    "itemId": "white_wine",
+    "nome": "Vinho branco",
+    "categoria": "Outros",
+    "precoPorUnidade": 42.0,
+    "unidadePadrao": "L",
+    "tamanhoUnidade": 0.75
+  },
+  {
+    "itemId": "quinoa",
+    "nome": "Quinoa",
+    "categoria": "Grãos",
+    "precoPorUnidade": 34.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.25
+  },
+  {
+    "itemId": "ravioli_filled",
+    "nome": "Ravioli recheado",
+    "categoria": "Grãos",
+    "precoPorUnidade": 32.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.4
+  },
+  {
+    "itemId": "lasagna_pasta",
+    "nome": "Massa para lasanha",
+    "categoria": "Grãos",
+    "precoPorUnidade": 22.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.5
+  },
+  {
+    "itemId": "tagliatelle",
+    "nome": "Talharim",
+    "categoria": "Grãos",
+    "precoPorUnidade": 18.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.5
+  },
+  {
+    "itemId": "penne",
+    "nome": "Penne",
+    "categoria": "Grãos",
+    "precoPorUnidade": 15.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.5
+  },
+  {
+    "itemId": "spaghetti",
+    "nome": "Espaguete",
+    "categoria": "Grãos",
+    "precoPorUnidade": 14.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.5
+  },
+  {
+    "itemId": "truffle_oil",
+    "nome": "Azeite trufado",
+    "categoria": "Outros",
+    "precoPorUnidade": 180.0,
+    "unidadePadrao": "L",
+    "tamanhoUnidade": 0.06
+  },
+  {
+    "itemId": "lemon_sicilian",
+    "nome": "Limão siciliano",
+    "categoria": "Legumes",
+    "precoPorUnidade": 18.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.5
+  },
+  {
+    "itemId": "sage",
+    "nome": "Sálvia",
+    "categoria": "Temperos",
+    "precoPorUnidade": 120.0,
+    "unidadePadrao": "kg",
+    "tamanhoUnidade": 0.03
+  }
+]

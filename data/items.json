@@ -1,0 +1,314 @@
+[
+  {
+    "id": "rice",
+    "nome": "Arroz",
+    "categoria": "Grãos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "beans",
+    "nome": "Feijão",
+    "categoria": "Grãos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "egg",
+    "nome": "Ovo",
+    "categoria": "Proteínas",
+    "unidadePadrao": "un"
+  },
+  {
+    "id": "chicken",
+    "nome": "Frango",
+    "categoria": "Proteínas",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "ground_beef",
+    "nome": "Carne moída",
+    "categoria": "Proteínas",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "pasta",
+    "nome": "Macarrão",
+    "categoria": "Grãos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "bread",
+    "nome": "Pão",
+    "categoria": "Outros",
+    "unidadePadrao": "un"
+  },
+  {
+    "id": "milk",
+    "nome": "Leite",
+    "categoria": "Laticínios",
+    "unidadePadrao": "L"
+  },
+  {
+    "id": "cheese",
+    "nome": "Queijo",
+    "categoria": "Laticínios",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "butter",
+    "nome": "Manteiga",
+    "categoria": "Laticínios",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "tomato",
+    "nome": "Tomate",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "onion",
+    "nome": "Cebola",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "garlic",
+    "nome": "Alho",
+    "categoria": "Temperos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "lettuce",
+    "nome": "Alface",
+    "categoria": "Legumes",
+    "unidadePadrao": "un"
+  },
+  {
+    "id": "carrot",
+    "nome": "Cenoura",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "potato",
+    "nome": "Batata",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "banana",
+    "nome": "Banana",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "oats",
+    "nome": "Aveia",
+    "categoria": "Grãos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "coffee",
+    "nome": "Café",
+    "categoria": "Outros",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "oil",
+    "nome": "Óleo",
+    "categoria": "Outros",
+    "unidadePadrao": "L"
+  },
+  {
+    "id": "salt",
+    "nome": "Sal",
+    "categoria": "Temperos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "pepper",
+    "nome": "Pimenta-do-reino",
+    "categoria": "Temperos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "yogurt",
+    "nome": "Iogurte",
+    "categoria": "Laticínios",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "tuna",
+    "nome": "Atum",
+    "categoria": "Proteínas",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "corn",
+    "nome": "Milho",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "peas",
+    "nome": "Ervilha",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "cassava_flour",
+    "nome": "Farinha de mandioca",
+    "categoria": "Grãos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "spinach",
+    "nome": "Espinafre",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "pumpkin",
+    "nome": "Abóbora",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "orange",
+    "nome": "Laranja",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "tapioca_gum",
+    "nome": "Goma de tapioca",
+    "categoria": "Grãos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "sardine",
+    "nome": "Sardinha",
+    "categoria": "Proteínas",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "cabbage",
+    "nome": "Repolho",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "zucchini",
+    "nome": "Abobrinha",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "sweet_potato",
+    "nome": "Batata-doce",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "cream",
+    "nome": "Creme de leite",
+    "categoria": "Laticínios",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "ham",
+    "nome": "Presunto",
+    "categoria": "Proteínas",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "jam",
+    "nome": "Geleia",
+    "categoria": "Outros",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "honey",
+    "nome": "Mel",
+    "categoria": "Outros",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "papaya",
+    "nome": "Mamão",
+    "categoria": "Outros",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "strawberry",
+    "nome": "Morango",
+    "categoria": "Outros",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "granola",
+    "nome": "Granola",
+    "categoria": "Grãos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "peanut_butter",
+    "nome": "Pasta de amendoim",
+    "categoria": "Outros",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "cream_cheese",
+    "nome": "Requeijão cremoso",
+    "categoria": "Laticínios",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "apple",
+    "nome": "Maçã",
+    "categoria": "Outros",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "coconut",
+    "nome": "Coco ralado",
+    "categoria": "Outros",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "cornmeal",
+    "nome": "Fubá / creme de milho",
+    "categoria": "Grãos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "flour",
+    "nome": "Farinha de trigo",
+    "categoria": "Grãos",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "cocoa",
+    "nome": "Chocolate em pó",
+    "categoria": "Outros",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "acerola",
+    "nome": "Acerola",
+    "categoria": "Outros",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "beef",
+    "nome": "Carne bovina",
+    "categoria": "Proteínas",
+    "unidadePadrao": "kg"
+  },
+  {
+    "id": "okra",
+    "nome": "Quiabo",
+    "categoria": "Legumes",
+    "unidadePadrao": "kg"
+  }
+]
