@@ -27,7 +27,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" data-theme="light" className={`${inter.variable} ${jakarta.variable}`}>
+    <html
+      lang="pt-BR"
+      data-theme="light"
+      data-scroll-behavior="smooth"
+      className={`${inter.variable} ${jakarta.variable}`}
+    >
       <body className="min-h-screen bg-[var(--bg)] font-[var(--font-inter)] text-[var(--text)] antialiased selection:bg-[var(--brand)]/25 selection:text-[var(--text)]">
         {children}
       </body>

@@ -16,6 +16,9 @@ interface Props {
   className?: string;
   imageUrl?: string;
   recipeFamily?: string;
+
+  /** usado quando a imagem está acima da dobra (LCP) */
+  priority?: boolean;
 }
 
 function getFamilyImage(recipeId: string, family: string) {
@@ -44,6 +47,7 @@ export function RecipePhoto({
   className,
   imageUrl,
   recipeFamily,
+  priority = false,
 }: Props) {
 
   const src = useMemo(() => {
@@ -81,6 +85,7 @@ export function RecipePhoto({
         src={src}
         alt={alt}
         fill
+        priority={priority}
         sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
         className="object-cover"
         unoptimized

@@ -282,6 +282,7 @@ export function formatQuantityLabel(quantity: number, unit: string) {
   return `${Number.isInteger(quantity) ? quantity : quantity.toFixed(1)} ${unit}`;
 }
 
+
 export function getCostBreakdown(recipeId: string, variationName: string, numPessoas: number): CostBreakdownItem[] {
   const recipe = getRecipeById(recipeId);
   if (!recipe) return [];
@@ -528,39 +529,57 @@ export function getRecipeDetailData(recipeId: string, variationName: string, peo
 }
 
 export function sumIngredients(days: PlannedDay[], numPessoas: number) {
-  const map = new Map<string, ShoppingListItem>();
+  const usageMap = new Map<string, number>();
 
+  // soma quantidade usada na semana
   days.forEach((day) => {
     Object.values(day.meals).forEach((meal) => {
       if (!meal) return;
-      const recipe = recipeDb.find((item) => item.id === meal.recipeId);
+
+      const recipe = recipeDb.find((r) => r.id === meal.recipeId);
       if (!recipe) return;
 
       getIngredientsForMeal(recipe, meal.variationName).forEach((ing) => {
-        const price = priceDb.find((item) => item.itemId === ing.itemId);
-        if (!price) return;
-        const quantity = ing.qtyPorPessoa * numPessoas;
-        const cost = quantity * price.precoPorUnidade;
-        const current = map.get(ing.itemId);
+        const used = ing.qtyPorPessoa * numPessoas;
 
-        if (current) {
-          current.quantidade += quantity;
-          current.custo += cost;
-        } else {
-          map.set(ing.itemId, {
-            itemId: ing.itemId,
-            nome: price.nome,
-            categoria: price.categoria,
-            unidade: ing.unidade,
-            quantidade: quantity,
-            custo: cost
-          });
-        }
+        const current = usageMap.get(ing.itemId) ?? 0;
+
+        usageMap.set(
+          ing.itemId,
+          Number(current) + used
+        );
       });
     });
   });
 
-  return Array.from(map.values());
+  const result: ShoppingListItem[] = [];
+
+  // converte para quantidade de compra
+  usageMap.forEach((totalUsed, itemId) => {
+    const price = priceDb.find((p) => p.itemId === itemId);
+    if (!price) return;
+
+    const packageInfo = getPackageInfo(price);
+
+    const packagesNeeded = Math.ceil(totalUsed / packageInfo.quantity);
+
+    const quantityToBuy = packagesNeeded * packageInfo.quantity;
+
+    const packageCost = packageInfo.quantity * price.precoPorUnidade;
+
+const cost = packagesNeeded * packageCost;
+
+    result.push({
+      itemId,
+      nome: price.nome,
+      categoria: price.categoria,
+      unidade: packageInfo.unit,
+      quantidade: quantityToBuy,
+      custo: cost
+    });
+  });
+
+  return result;
 }
 
 export function calculateCost(days: PlannedDay[]) {
@@ -1310,11 +1329,47 @@ export function replaceMealVariation(plan: PlanResult, dayNumber: number, meal: 
   return recalculatePlan(nextPlan);
 }
 
+function formatShoppingQuantity(quantity: number, unit: string) {
+
+  const clean = Math.round(quantity * 100) / 100;
+
+  if (unit === "g") {
+
+    if (clean >= 1000) {
+      const kg = Math.round((clean / 1000) * 100) / 100;
+      return `${kg} kg`;
+    }
+
+    return `${Math.round(clean)} g`;
+  }
+
+  if (unit === "ml") {
+
+    if (clean >= 1000) {
+      const L = Math.round((clean / 1000) * 100) / 100;
+      return `${L} L`;
+    }
+
+    return `${Math.round(clean)} ml`;
+  }
+
+  if (unit === "un") {
+    return `${Math.round(clean)} un`;
+  }
+
+  return `${clean} ${unit}`;
+}
+
 export function exportShoppingListCsv(plan: PlanResult) {
   const rows = ['Categoria,Item,Quantidade,Unidade,Custo'];
   Object.entries(plan.shoppingList).forEach(([category, list]) => {
     list.forEach((item) => {
-      rows.push([category, item.nome, item.quantidade.toFixed(2), item.unidade, item.custo.toFixed(2)].join(','));
+      rows.push([
+  category,
+  item.nome,
+  formatShoppingQuantity(item.quantidade, item.unidade),
+  item.custo.toFixed(2)
+].join(';'));
     });
   });
   return rows.join('\n');
@@ -1322,8 +1377,8 @@ export function exportShoppingListCsv(plan: PlanResult) {
 
 export function exportShoppingListText(plan: PlanResult) {
   return Object.entries(plan.shoppingList)
-    .map(([category, list]) => `${category}\n${list.map((item) => `- ${item.nome}: ${item.quantidade.toFixed(2)} ${item.unidade} | R$ ${item.custo.toFixed(2)}`).join('\n')}`)
-    .join('\n\n');
+    .map(([category, list]) => `${category}\n${list.map((item) => `- ${item.nome}: ${formatShoppingQuantity(item.quantidade, item.unidade)} | R$ ${item.custo.toFixed(2)}`).join('\n')}`)
+    .join('\n\n') + `\n\n💰 Total estimado da compra: ${formatCurrency(plan.totalCost)}`;
 }
 
 export function getDefaultConfig(): PlannerConfig {
